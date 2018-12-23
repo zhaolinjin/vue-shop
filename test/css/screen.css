@@ -1,0 +1,116 @@
+.screen-container {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  margin: 0 80px 40px 0;
+  width: 300px;
+  height: 253px;
+  font-size: 0;
+  background: linear-gradient(#fff 20%, #f3f3f3 92%);
+  border: 1px solid #ccc;
+  border-radius: 60px/5px;
+}
+
+.box-top {
+  height: 170px;
+  position: relative;
+  cursor: pointer;
+  perspective: 500px;
+}
+
+.box-top .overlay {
+  width: 60px;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 150ms ease-in-out
+}
+
+.box-top:hover .overlay {
+  opacity: 1
+}
+
+.box-top .picture1>.overlay {
+  background: -moz-linear-gradient(right,rgba(0,0,0,0.05) 0,rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(right,rgba(0,0,0,0.05) 0,rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(right,rgba(0,0,0,0.05) 0,rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(right,rgba(0,0,0,0.05) 0,rgba(0,0,0,0) 100%);
+  background: linear-gradient(right,rgba(0,0,0,0.05) 0,rgba(0,0,0,0) 100%)
+}
+
+.box-top .picture2>.overlay {
+  background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 100%);
+  background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 100%);
+  background: -o-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 100%);
+  background: -ms-linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 100%);
+  background: linear-gradient(left,rgba(255,255,255,0) 0,rgba(255,255,255,0.2) 100%)
+}
+
+.box-top .picture3>.overlay {
+  background: -moz-linear-gradient(right,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.2) 100%);
+  background: -webkit-linear-gradient(right,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.2) 100%);
+  background: -o-linear-gradient(right,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.2) 100%);
+  background: -ms-linear-gradient(right,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.2) 100%);
+  background: linear-gradient(right,rgba(0,0,0,0.8) 0,rgba(0,0,0,0.2) 100%)
+}
+
+.box-top .picture4>.overlay {
+  background: -moz-linear-gradient(left,rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(left,rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(left,rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 100%);
+  background: linear-gradient(left,rgba(0,0,0,0.8) 0,rgba(0,0,0,0) 100%)
+}
+
+.box-top .picture5>.overlay {
+  background: -moz-linear-gradient(left,rgba(0,0,0,0.3) 0,rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(left,rgba(0,0,0,0.3) 0,rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(left,rgba(0,0,0,0.3) 0,rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(left,rgba(0,0,0,0.3) 0,rgba(0,0,0,0) 100%);
+  background: linear-gradient(left,rgba(0,0,0,0.3) 0,rgba(0,0,0,0) 100%)
+}
+
+.box-top:hover .picture2{
+  transform:translate3d(59px,0,0) rotate3d(0,1,0,-45deg)
+}
+
+.box-top:hover .picture3, 
+.box-top:hover .picture5 {
+  transform:translate3d(59px,0,0) rotate3d(0,1,0,90deg)
+}
+
+.box-top:hover .picture4 {
+  transform:translate3d(59px,0,0) rotate3d(0,1,0,-90deg)
+}
+
+.box-top .slice {
+  width: 60px;
+  height: 100%;
+  background-image: url(../images/1.png);
+  background-size: 300px 170px;
+  transform: translateX(60px);
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 150ms ease-in-out
+}
+
+.box-top .picture1 {
+  background-position: 0 0;
+    transform: translateX(0)
+}
+
+.box-top .picture2 {
+  background-position: -60px 0;
+}
+
+.box-top .picture3 {
+  background-position: -120px 0;
+}
+
+.box-top .picture4 {
+  background-position: -180px 0;
+}
+
+.box-top .picture5 {
+  background-position: -240px 0;
+}

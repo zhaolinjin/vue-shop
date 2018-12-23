@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+}
+ul, li, html, body {
+    padding: 0;
+    margin: 0;
+}
+.clear-fix {
+    zoom: 1;
+}
+.clear-fix:after {
+    content: '';
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
